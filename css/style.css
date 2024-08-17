@@ -1,0 +1,321 @@
+@charset "UTF-8";
+body {
+    font-family: 'Noto Serif JP', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 720px; /* 3600px -> 720px */
+    margin: 0 auto; /* 横方向に中央寄せ */
+    background-color: #ede7e7; /* 背景色を白に設定 */
+    box-sizing: border-box;
+    padding: 0 20px; /* 100px -> 20px */
+}
+
+.header-logo {
+    display: block;
+    width: 100%;
+    max-width: 240px; /* 1200px -> 240px */
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item + .nav-item {
+    margin-left: 8px; /* 40px -> 8px */
+}
+
+.nav-item {
+    font-size: 16px; /* 80px -> 16px */
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 15px 20px; /* 75px 100px -> 15px 20px */
+    text-align: center;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc; /* 5px -> 1px */
+    border-radius: 5px; /* 25px -> 5px */
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item a:hover {
+    background-color: #ae2b2b;
+    color: white;
+}
+
+.nav-header {
+    margin-top: 40px; /* 200px -> 40px */
+}
+
+.header {
+    background-color: rgb(141, 133, 139);
+    padding: 40px 0 60px 0; /* 200px 0 300px -> 40px 0 60px */
+}
+
+.section-inner {
+    width: 100%; /* 親要素（.container）に合わせる */
+    margin: 0 auto;
+}
+
+.kv {
+    background-color: rgb(141, 133, 139);
+    padding-bottom: 60px; /* 300px -> 60px */
+}
+
+.kv-img {
+    height: auto; /* 2400px -> auto */
+}
+
+.kv-img img {
+    width: 100%; /* 親要素（.kv-img）に合わせる */
+    height: auto;
+    object-fit: cover;
+}
+
+.section-wrapper {
+    padding: 60px 0; /* 300px -> 60px */
+}
+
+.concept {
+    color: black;
+}
+
+.concept-head {
+    font-size: 24px; /* 120px -> 24px */
+    font-weight: bold;
+    text-align: center;
+}
+
+.concept-content {
+    font-size: 32px; /* 160px -> 32px */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px; /* 200px -> 40px */
+}
+
+.concept-content2 {
+    font-size: 16px; /* 80px -> 16px */
+    text-align: center;
+    margin-top: 40px; /* 200px -> 40px */
+}
+
+.item {
+    color: rgb(0, 0, 0);
+}
+
+.item-justify {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-img {
+    width: 45%;
+    max-width: 320px; /* 1600px -> 320px */
+}
+
+.item-wrapper {
+    margin-top: 40px; /* 200px -> 40px */
+}
+
+.item-ttl {
+    font-size: 20px; /* 100px -> 20px */
+    font-weight: bold;
+}
+
+.item-price {
+    font-size: 16px; /* 80px -> 16px */
+    font-weight: bold;
+    margin-top: 25px; /* 125px -> 25px */
+}
+
+.item-txt {
+    font-size: 16px; /* 80px -> 16px */
+    font-weight: medium;
+    margin-top: 25px; /* 125px -> 25px */
+}
+
+.item-btn {
+    font-size: 10px; /* 50px -> 10px */
+    font-family: 'Noto Serif JP', serif;
+    display: block;
+    width: 160px; /* 800px -> 160px */
+    border: solid;
+    line-height: 40px; /* 200px -> 40px */
+    border-radius: 20px; /* 100px -> 20px */
+    text-align: center;
+    margin-top: 25px; /* 125px -> 25px */
+}
+
+.item-btn:hover {
+    color: white;
+    background-color: black;
+}
+
+.item-content {
+    margin-top: 40px; /* 200px -> 40px */
+    width: 45%;
+    max-width: 320px; /* 1600px -> 320px */
+}
+
+.item-justify:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.shop-ttl {
+    text-align: center;
+    font-size: 24px; /* 120px -> 24px */
+    font-weight: bold;
+}
+
+.shop-img {
+    width: 48%;
+}
+
+.shop {
+    background-color: rgb(138, 137, 137);
+}
+
+.shop-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-content {
+    padding-top: 0px;
+}
+
+.shop-table {
+    width: 100%;
+    max-width: 480px; /* 2400px -> 480px */
+}
+
+.shop-row {
+    font-size: 18px; /* 90px -> 18px */
+    font-weight: bold;
+    border-bottom: 1px solid black; /* 5px -> 1px */
+}
+
+.shop-ttl {
+    padding-top: 60px; /* 300px -> 60px */
+}
+
+.shop-img {
+    padding: 40px 10px 60px 0px; /* 200px 50px 300px -> 40px 10px 60px */
+}
+
+.shop-head {
+    padding: 15px 0; /* 75px -> 15px */
+}
+
+.shop-description {
+    padding: 15px 0; /* 75px -> 15px */
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px; /* 100px -> 20px */
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 20px; /* 100px -> 20px */
+}
+
+.contact-section .concept-head {
+    font-size: 24px; /* 120px -> 24px */
+    color: #333;
+    margin: 0;
+}
+
+.email-trial-section .section-wrapper {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.email-trial-section .section-inner {
+    background-color: #bdbdbdc0;
+    border-radius: 10px; /* 50px -> 10px */
+    padding: 30px; /* 150px -> 30px */
+    width: 100%;
+    max-width: 700px; /* 3500px -> 700px */
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 0px 20px 50px -> 0px 4px 10px */
+    margin: 0 auto;
+}
+
+.email-trial-section .trial-head {
+    font-size: 18px; /* 90px -> 18px */
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px; /* 100px -> 20px */
+}
+
+.email-trial-section .concept-content {
+    font-size: 14px; /* 70px -> 14px */
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px; /* 100px -> 20px */
+}
+
+.email-trial-section .concept-content2 {
+    font-size: 14px; /* 70px -> 14px */
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px; /* 100px -> 20px */
+}
+
+.email-trial-section input[type="email"] {
+    font-size: 10px; /* 50px -> 10px */
+    width: 100%;
+    padding: 10px; /* 50px -> 10px */
+    border-radius: 5px; /* 25px -> 5px */
+    border: 2px solid #000000; /* 10px -> 2px */
+    margin-bottom: 20px; /* 100px -> 20px */
+    box-sizing: border-box;
+}
+
+.email-trial-section button {
+    background-color: #f4b400;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* 50px 100px -> 10px 20px */
+    border-radius: 5px; /* 25px -> 5px */
+    cursor: pointer;
+    font-size: 16px; /* 80px -> 16px */
+    width: 100%;
+}
+
+.email-trial-section button:hover {
+    background-color: #e5a200;
+}
+
+.footer-img {
+    max-width: 250px; /* 1250px -> 250px */
+    margin: 0 auto;
+    padding-top: 60px; /* 300px -> 60px */
+}
+
+.footer-cp {
+    text-align: center;
+    margin-top: 60px; /* 300px -> 60px */
+    padding: 20px; /* 100px -> 20px */
+}
